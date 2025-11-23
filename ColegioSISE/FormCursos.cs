@@ -2,12 +2,6 @@
 using ColegioSISE.Entities;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ColegioSISE
@@ -39,7 +33,9 @@ namespace ColegioSISE
             dgvCursos.Columns.Add("CantidadMatriculados", "Alumnos Matriculados");
             dgvCursos.Columns["CantidadMatriculados"].DataPropertyName = "CantidadMatriculados";
 
-            List<Curso> cursos = cursoService.ListarCursosPorDocente(1);
+            Docente docente = SesionActual.DocenteLogueado;
+
+            List<Curso> cursos = cursoService.ListarCursosPorDocente(docente.IdDocente);
 
             dgvCursos.DataSource = cursos;
         }

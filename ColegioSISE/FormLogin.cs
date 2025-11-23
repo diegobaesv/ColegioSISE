@@ -22,6 +22,8 @@ namespace ColegioSISE
             {
                 Docente docente = loginService.Login(txtNombreUsuario.Text, txtClave.Text);
 
+                SesionActual.DocenteLogueado = docente;
+
                 MessageBox.Show(
                     "!Bienvenido "+ docente.Nombres+" al sistema de Notas!",
                     "Acceso Ok",

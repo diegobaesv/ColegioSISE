@@ -17,6 +17,12 @@ namespace ColegioSISE
             InitializeComponent();
         }
 
+
+        private void FormInicio_Load(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormBienvenida());
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 

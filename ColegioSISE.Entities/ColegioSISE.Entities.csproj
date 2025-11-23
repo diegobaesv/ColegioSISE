@@ -47,6 +47,7 @@
     <Compile Include="Nota.cs" />
     <Compile Include="MatriculaClase.cs" />
     <Compile Include="Curso.cs" />
+    <Compile Include="SesionActual.cs" />
     <Compile Include="TipoNota.cs" />
     <Compile Include="Docente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
