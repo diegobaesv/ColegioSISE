@@ -9,7 +9,7 @@ namespace ColegioSISE.Data.Repositories
 {
     public class CursosDAO
     {
-        // package dto
+        // package dto en bussiness
         // class ListarCursosPorDocenteResponse
         public List<Curso> ListarCursosPorDocente(int idDocente)
         {
